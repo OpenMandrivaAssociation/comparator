@@ -31,3 +31,10 @@ install comparator.py  %{buildroot}%{py_sitedir}
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/comparator.1*
 %{py_sitedir}/*
+
+
+%changelog
+* Tue Jan 10 2012 Alexander Khrukin <akhrukin@mandriva.org> 2.8-1
++ Revision: 759415
+- imported package comparator
+
