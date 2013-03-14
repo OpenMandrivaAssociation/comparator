@@ -1,3 +1,5 @@
+%define debug_package %{nil}
+
 Summary:	Tools for fast comparasion of large source-code trees
 Name:		comparator
 Version:	2.9
