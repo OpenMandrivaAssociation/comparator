@@ -18,18 +18,17 @@ tools for detecting copyright infringement.
 %setup -q
 
 %build
-%make
+%make CC=%{__cc}
 
 %install
-install -d %{buildroot}{%{_bindir},%{_mandir}/man1,%{py_sitedir}}
+install -d %{buildroot}{%{_bindir},%{_mandir}/man1,%{py2_puresitedir}}
 
 install comparator filterator  %{buildroot}%{_bindir}
 install comparator.1  %{buildroot}%{_mandir}/man1
-install comparator.py  %{buildroot}%{py_sitedir}
+install comparator.py  %{buildroot}%{py2_puresitedir}
 
 %files
 %doc README
 %{_bindir}/*
 %{_mandir}/man1/comparator.1*
-%{py_sitedir}/*
-
+%{py2_puresitedir}/*
