@@ -3,7 +3,7 @@
 Summary:	Tools for fast comparasion of large source-code trees
 Name:		comparator
 Version:	2.9
-Release:	8
+Release:	9
 License:	BSD
 Group:		Development/Other
 Url:		http://www.catb.org/~esr/comparator
