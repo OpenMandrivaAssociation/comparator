@@ -2,8 +2,8 @@
 
 Summary:	Tools for fast comparasion of large source-code trees
 Name:		comparator
-Version:	2.9
-Release:	10
+Version:	2.10
+Release:	1
 License:	BSD
 Group:		Development/Other
 Url:		http://www.catb.org/~esr/comparator
@@ -15,10 +15,11 @@ common code segments in large source trees. They can be useful as
 tools for detecting copyright infringement.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
-%make CC=%{__cc}
+%setup_compile_flags
+%make_build CC=%{__cc}
 
 %install
 install -d %{buildroot}{%{_bindir},%{_mandir}/man1,%{py2_puresitedir}}
