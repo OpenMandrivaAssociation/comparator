@@ -6,7 +6,7 @@ Version:	2.10
 Release:	1
 License:	BSD
 Group:		Development/Other
-Url:		http://www.catb.org/~esr/comparator
+Url:		https://www.catb.org/~esr/comparator
 Source0:	http://www.catb.org/~esr/comparator/%{name}-%{version}.tar.gz
 
 %description
